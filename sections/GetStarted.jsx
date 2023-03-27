@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 import styles from "../styles";
 import { slideIn, staggerContainer } from "../utils/motion";
 
@@ -18,9 +18,11 @@ const GetStarted = () => (
         variants={slideIn("right", "tween", 0.2, 1)}
         className="w-full h-full flex justify-center items-center"
       >
-        <img
+        <Image
           src="/building-2.jpg"
           alt="building"
+          width="900"
+          height="650"
           className="rounded-tl-[24px] rounded-bl-[24px]"
         />
       </motion.div>

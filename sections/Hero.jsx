@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import Image from "next/image";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -27,10 +28,12 @@ const Hero = () => (
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px] rounded-tl-[140px] z-[0] -top-[150px] mb-50px">
-          <img
+          <Image
             src="/cover.jpg"
             alt="cover"
             className="w-full sm:h-[400px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+            width="550"
+            height="300"
           />
         </div>
       </motion.div>
